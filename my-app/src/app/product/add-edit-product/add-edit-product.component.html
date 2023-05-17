@@ -1,0 +1,46 @@
+
+         <p-dialog header="Header" [(visible)]="displayAddModal" [style]="{ width: '50vw' }" (onHide)="closeModal()">
+          <ng-template pTemplate="header">
+            <span class="text-xl font-bold">Header Content</span>
+          </ng-template>
+        
+          <form [formGroup]="productForm">
+            <div class="field">
+              <label class="block">Title</label>
+              <input type="text" pInputText id="title" formControlName="title" />
+              <small class="p-error block" *ngIf="productForm.controls['title'].invalid && productForm.controls['title'].dirty">
+                Field is required
+              </small>
+            </div>
+            <div class="field">
+              <label class="block" for="price">Price</label>
+              <p-inputNumber inputId="integeronly" formControlName="price"></p-inputNumber>
+              <small class="p-error block" *ngIf="productForm.controls['price'].invalid && productForm.controls['price'].dirty">
+                Field is required
+              </small>
+            </div>
+            <div class="field">
+              <label class="block">Description</label>
+              <textarea rows="5" cols="30" pInputTextarea formControlName="description"></textarea>
+            </div>
+            <div class="field">
+              <label class="block" for="image">Image</label>
+              <input type="text" pInputText id="image" formControlName="image" />
+              <small class="p-error block" *ngIf="productForm.controls['image'].invalid && productForm.controls['image'].dirty">
+                Field is required
+              </small>
+            </div>
+            <div class="field">
+              <label class="block" for="category">Category</label>
+              <input type="text" pInputText id="category" formControlName="category" />
+              <small class="p-error block" *ngIf="productForm.controls['category'].invalid && productForm.controls['category'].dirty">
+                Field is required
+              </small>
+            </div>
+          </form>
+          <ng-template pTemplate="footer">
+            <p-button (click)="closeModal()" label="Cancel" styleClass="p-button-text"></p-button>
+            <p-button (click)="addProduct()" label="Add" styleClass="p-button-text" [disabled]="productForm.invalid"></p-button>
+          </ng-template>
+        </p-dialog>
+        

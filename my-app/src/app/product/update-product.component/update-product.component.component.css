@@ -1,0 +1,67 @@
+/* Update product dialog */
+.p-dialog-update {
+    transition: all 0.3s ease;
+  }
+  
+  /* Update form */
+  .update-form {
+    margin: 1rem;
+  }
+  
+  /* Input fields */
+  .input-field {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #80bdff;
+  }
+  
+  /* Error message */
+  .p-error {
+    color: red;
+    font-size: 0.75rem;
+  }
+  
+  /* Update buttons */
+  .update-button {
+    margin-right: 0.5rem;
+  }
+  
+  /* Animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  .p-dialog-update {
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+  }
+  
+  .p-dialog-update.ng-leave {
+    animation-name: slideOut;
+  }
+  
+  .p-dialog-update.ng-enter {
+    animation-name: slideIn;
+  }
+  

@@ -1,0 +1,33 @@
+
+.button-gap {
+    margin-left: 10px; /* Adjust the value as per your desired gap */
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+  }
+  
+  .pagination li a:hover {
+    color: #ff0000; /* Change to your desired hover color */
+  }
+  

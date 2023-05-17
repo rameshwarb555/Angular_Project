@@ -1,0 +1,67 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+// {
+//   "extends": "./tsconfig.json",
+//   "compilerOptions": {
+//     "outDir": "./out-tsc/app",
+//     "types": ["jest"]
+//   },
+//   "files": [
+//     "src/main.ts"
+//   ],
+//   "include": [
+//     "src/**/*.d.ts"
+//   ]
+// }
+
+
+// {
+//   "extends": "./tsconfig.json",
+//   "compilerOptions": {
+//     "outDir": "./out-tsc/app",
+//     "types": ["jest"]
+//   },
+//   "files": [],
+//   "include": [
+//     "src/**/*.spec.ts",
+//     "src/**/*.d.ts"
+//   ],
+//   "exclude": [
+//     "node_modules"
+//   ]
+// }
+
+
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "module": "es2020",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true
+//   },
+//   "angularCompilerOptions": {
+//     "enableIvy": true
+//   },
+//   "include": [
+//     "src/**/*.ts"
+//   ],
+//   "exclude": [
+//     "node_modules"
+//   ]
+// }
+
+
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}
